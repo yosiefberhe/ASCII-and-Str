@@ -1,0 +1,40 @@
+
+# 1.	Write a Python program (with comments) to do the following: 
+a.	Assign the value '30//6' to a variable str1.
+b.	Use the eval() function to evaluate str1and assign the result to a variable num1. Print num1 with a suitable message.
+c.	Ask the user to input their favorite city in lowercase and save the response in a variable city. Print city with a suitable message.
+d.	Determine the first letter of city assign it to a variable x and display it with a suitable message.
+e.	Determine the ASCII code for the first letter of city and display it with a suitable message. HINT: Use the built-in ord() function. See pg. 78-79 of textbook.
+f.	Determine how many times x (i.e. 1st letter of city) occurs in city and display the result with a suitable message.
+g.	Print the first 4 letters of city in uppercase. The letters should be centered in a string of length 30, with ‘*’ as the fill character for the remaining positions. 
+
+
+
+
+
+
+
+
+str1='30//6'
+
+num1=eval(str1)
+
+print("The answer is " + str (num1))
+
+city=input("Please enter your favourite city in a lowercase: ")
+
+x=city[0]
+
+print("Your favourite city is: " + city)
+
+print("The first letter of your favourite city is: "+ x)
+
+print("The ASCII code for your favourite city is: " + str(ord(x)))
+
+print("The letter " + x + " occurs " + str(city.count(x)) + " times.")
+
+string = city.upper()[:4]
+
+new_string = string.center(30, '*')
+
+print("The first 4 words Centered and Uppercase: ", new_string)
